@@ -43,19 +43,24 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Update header img
 let headerImg = document.getElementById('cta-img');
-headerImg.src = "img/header-img.png";
+headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 // Update middle img
 let middleImg = document.getElementById('middle-img');
-middleImg.src = "img/mid-page-accent.jpg";
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);;
 
 // Add navbar
 let navContent = ['Services', 'Product', 'Vision', 'Features', 'About', 'Contact'];
-const navBar = document.querySelectorAll('a');
-navBar[0].textContent = navContent[0];
-navBar[1].textContent = navContent[1];
-navBar[2].textContent = navContent[2];
-navBar[3].textContent = navContent[3];
-navBar[4].textContent = navContent[4];
-navBar[5].textContent = navContent[5];
+let navBar = document.querySelectorAll('a');
+navBar.forEach(function(e,index){ e.textContent = navContent[index]});
+
+// Made each element green
 navBar.forEach(e => e.style.color = "green");
+
+// Left section
+let ctaHeading = document.querySelector('.cta-text h1');
+ctaHeading.textContent = siteContent['cta']['h1'];
+let ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent['cta']['button'];
+
+// Main section
