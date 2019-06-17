@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM \n Is \n Awesome",
+    "h1": "DOM<br>Is<br> Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -57,9 +57,19 @@ navBar.forEach(function(e,index){ e.textContent = navContent[index]});
 // Made each element green
 navBar.forEach(e => e.style.color = "green");
 
+// Adding new elements to navbar
+let newNavItem1 = document.createElement('a');
+newNavItem1.textContent = 'Blog';
+newNavItem1.style.color = 'green';
+let newNavItem2 = document.createElement('a');
+newNavItem2.textContent = 'News';
+newNavItem2.style.color = 'green';
+document.querySelector('nav').appendChild(newNavItem1);
+document.querySelector('nav').prepend(newNavItem2);
+
 // Left section
 let ctaHeading = document.querySelector('.cta-text h1');
-ctaHeading.textContent = siteContent['cta']['h1'];
+ctaHeading.innerHTML = siteContent['cta']['h1'];
 let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent['cta']['button'];
 
