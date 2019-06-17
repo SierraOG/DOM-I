@@ -74,21 +74,12 @@ let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent['cta']['button'];
 
 // Main section
-// Top section
-let topHeadersArray = ['Features', 'About']; 
-let topSectionArray = ['Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.', 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'];
-let topHeaders = document.querySelectorAll('.top-content .text-content h4');
-topHeaders.forEach(function(e,index){ e.textContent = topHeadersArray[index]});
-let topSection = document.querySelectorAll('.top-content .text-content p');
-topSection.forEach(function(e,index){ e.textContent = topSectionArray[index]});
-
-// Bottom section
-let bottomHeadersArray = ['Services','Product','Vision'];
-let bottomSectionArray = ["Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."];
-let bottomHeaders = document.querySelectorAll('.bottom-content .text-content h4');
-bottomHeaders.forEach(function(e,index){ e.textContent = bottomHeadersArray[index]});
-let bottomSection = document.querySelectorAll('.bottom-content .text-content p');
-bottomSection.forEach(function(e,index){ e.textContent = bottomSectionArray[index]});
+let headersArray = ['Features', 'About', 'Services','Product','Vision'];
+let headers = document.querySelectorAll('.text-content h4');
+headers.forEach(function(e,index){ e.textContent = headersArray[index]});
+let sectionArray = ['Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.', 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.', "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."];
+let sectionText = document.querySelectorAll('.text-content p');
+sectionText.forEach(function(e,index){ e.textContent = sectionArray[index]});
 
 // Contact section
 let contactHeader = document.querySelector('.contact h4');
