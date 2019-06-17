@@ -64,7 +64,6 @@ let ctaButton = document.querySelector('button');
 ctaButton.textContent = siteContent['cta']['button'];
 
 // Main section
-// mainContentArray = ["Features", "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","About","About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","Services","Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","Product","Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","Vision","Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."];
 // Top section
 let topHeadersArray = ['Features', 'About']; 
 let topSectionArray = ['Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.', 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'];
@@ -80,3 +79,10 @@ let bottomHeaders = document.querySelectorAll('.bottom-content .text-content h4'
 bottomHeaders.forEach(function(e,index){ e.textContent = bottomHeadersArray[index]});
 let bottomSection = document.querySelectorAll('.bottom-content .text-content p');
 bottomSection.forEach(function(e,index){ e.textContent = bottomSectionArray[index]});
+
+// Contact section
+let contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+let contactSectionArray = ["123 Way 456 Street Somewhere, USA","1 (888) 888-8888","sales@greatidea.io",];
+let contactSection = document.querySelectorAll('.contact p');
+contactSection.forEach(function(e,index){ e.textContent = contactSectionArray[index]});
