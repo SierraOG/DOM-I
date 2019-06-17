@@ -86,3 +86,7 @@ contactHeader.textContent = siteContent['contact']['contact-h4'];
 let contactSectionArray = ["123 Way 456 Street Somewhere, USA","1 (888) 888-8888","sales@greatidea.io",];
 let contactSection = document.querySelectorAll('.contact p');
 contactSection.forEach(function(e,index){ e.textContent = contactSectionArray[index]});
+
+// Footer
+let footerText = document.querySelector('footer p');
+footerText.textContent = siteContent['footer']['copyright'];
