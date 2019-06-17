@@ -48,3 +48,14 @@ headerImg.src = "img/header-img.png";
 // Update middle img
 let middleImg = document.getElementById('middle-img');
 middleImg.src = "img/mid-page-accent.jpg";
+
+// Add navbar
+let navContent = ['Services', 'Product', 'Vision', 'Features', 'About', 'Contact'];
+const navBar = document.querySelectorAll('a');
+navBar[0].textContent = navContent[0];
+navBar[1].textContent = navContent[1];
+navBar[2].textContent = navContent[2];
+navBar[3].textContent = navContent[3];
+navBar[4].textContent = navContent[4];
+navBar[5].textContent = navContent[5];
+navBar.forEach(e => e.style.color = "green");
