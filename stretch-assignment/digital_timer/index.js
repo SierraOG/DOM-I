@@ -30,12 +30,10 @@ function resetTimer(){
     msHundreds.innerHTML = 0;
     secondOnes.innerHTML = 0;
     secondTens.innerHTML = 0;
-    clearTimeout(interval);
 }
-
 
 
 startbtn = document.querySelector('.start');
 resetbtn = document.querySelector('.reset');
 startbtn.addEventListener('click', startTimer);
-resetbtn.addEventListener('click',resetTimer);
+resetbtn.addEventListener('click', resetTimer);
