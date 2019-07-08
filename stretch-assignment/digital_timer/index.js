@@ -8,6 +8,8 @@ msHundreds.innerHTML = 0;
 secondOnes.innerHTML = 0;
 secondTens.innerHTML = 0;
 
+digits = document.querySelectorAll('.digit');
+
 function startTimer(){
     let elapsedTime = 0;
     let startTime = Date.now();
@@ -21,11 +23,13 @@ function startTimer(){
           (formattedTime < 10) ? secondOnes.innerHTML = formattedTime[0] : secondOnes.innerHTML = 0;
           (formattedTime < 10) ? msHundreds.innerHTML = formattedTime[2] : msHundreds.innerHTML = 0;
           (formattedTime < 10) ? msTens.innerHTML = formattedTime[3] : msTens.innerHTML = 0;
+          if (formattedTime >= 10) { digits.forEach(digit=> digit.style.color = 'red')};
         }
     }, 10);
 };
 
 function resetTimer(){
+    digits.forEach(digit=> digit.style.color = 'black')
     msTens.innerHTML = 0;
     msHundreds.innerHTML = 0;
     secondOnes.innerHTML = 0;
